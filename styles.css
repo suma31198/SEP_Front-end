@@ -27,7 +27,7 @@ article p {
 .container {
     width: 100%;
     margin: auto;
-    padding-top: 4%;
+    padding-top: 0;
     padding-bottom: 4%;
     
 }
@@ -50,13 +50,17 @@ article p {
 .col-3 {width: 25%;}
 .col-4 {width: 33.33%;}
 .col-5 {width: 41.66%;}
-.col-6 {width: 50;}
+.col-6 {width: 50%;}
 .col-7 {width: 58.33%;}
 .col-8 {width: 66.66%;}
 .col-9 {width: 75%;}
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+.col-13 {
+    width: 50%;
+}
 
 * {
     box-sizing: border-box;
@@ -67,10 +71,12 @@ article p {
 nav {
     width: 100%;
     margin: 0;
+    position: ;
+    box-shadow: -2px -2px 20px 2px rgba(0,0,0,.15), 2px 2px 17px 2px rgba(0,0,0,1);
 }
 
 nav ul {
-    background-color: lavender;
+    background-color: black;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -92,7 +98,7 @@ nav ul a {
     text-align: center;
     padding: 14px;
     text-transform: uppercase;
-    color: blue;
+    color: white;
 }
 
 ul.topnav li a:hover {
@@ -107,9 +113,57 @@ ul.topnav li.dropdownIcon {
 
 /*######### Custom styles ##########*/
 
-#section-1-gradient {
-    background-image: linear-gradient(#076DFF, #65a5ff);
+.vid+vv {
+    padding-bottom: 500px;
 }
+
+div.leftSide-col {
+    text-align: center;
+}
+
+div.rightSide-col {
+    margin-left: 15%;
+}
+
+#myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 100%; 
+    height: 759px;
+    filter: blur(5px);
+    background: cover;
+}
+
+h1.large {
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 5px;
+    color: white;
+    font-size: 60px;
+    margin: 0;
+    line-height: 45px;
+    white-space: nowrap;
+}
+
+h2.large {
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 3px;
+    font-size: 36px;
+    color: white;
+    white-space: nowrap;
+    padding: 25px;
+}
+
+.overlay {
+    position:absolute;
+    top:300px;
+    left:485px;
+    bottom: 500px;
+    right: 550px;
+    z-index:1;
+}
+
+
 
 div.box {
     text-align: center;
@@ -121,8 +175,34 @@ div.box {
         0 2px 3px 0 rgba(0,0,0,.1);
 }
 
+.box2 {
+    text-align: center;
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15),
+        0 2px 3px 0 rgba(0,0,0,.1);
+    
+}
+
 div.icon {
     width: 100%;
+}
+
+h1.menu-head {
+    margin-left: 50%;
+    color: black;
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 5px;
+    font-size: 55px;
+}
+
+.menu-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
 }
 
 div.vvImg img {
@@ -148,19 +228,9 @@ button.buttons {
     margin: auto;
 }
 
-div.leftSide-col {
-    margin-left: 30%;
-}
-
-div.rightSide-col {
-    margin-left: 15%;
-}
-
-h1.large {
-    color: white;
-    font-size: 56px;
-    margin: 0;
-    line-height: 70px;
+.button2 {
+    width: 100%;
+    margin: 10px 5px 10px 0px;
 }
 
 h1.section2Header {
@@ -169,7 +239,15 @@ h1.section2Header {
 }
 
 form h2 {
-    color: white;
+    color: black;
+}
+
+input[type="text"] {
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 7px;
 }
 
 input[type="email"] {
@@ -187,6 +265,95 @@ input[type="password"] {
     padding: 5px;
     border-radius: 7px;
 }
+
+input[type="number"] {
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+input[type="submit"] {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    background-color: cornflowerblue;
+    padding: 15px 40px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+
 
 footer.footsy {
     background-color: gray;
@@ -261,7 +428,7 @@ footer.footsy ul li {
     }
     
     div.mobileStack{
-        width: 50%;
+        width: 100%;
         display: block;
     }
     
