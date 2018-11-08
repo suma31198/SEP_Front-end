@@ -25,12 +25,38 @@ article p {
 }
 
 .container {
+   
     width: 100%;
     margin: auto;
     padding-top: 0;
     padding-bottom: 4%;
     
+    
 }
+.imag {
+    background-image:url("hiii.png");
+ background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+.hello {
+    background-image:url("table.png");
+ background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+.water {
+    background-image:url("water.png");
+ background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+.lol{
+    background-image:url("hell.png");
+ background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+
+
 
 .row {
     width: 100%;
@@ -54,14 +80,24 @@ article p {
 .col-7 {width: 58.33%;}
 .col-8 {width: 66.66%;}
 .col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-.col-13 {
-    width: 50%;
+.col-10 {width:75%;
 }
+.col-11 {width: 100%;
 
+}
+.col-12 {width: 50%;
+    margin-left: 350px;
+}
+.col-14 {width :100%; }
+.col-13 {
+    width: 40%;
+    margin-left:100px;
+}
+.col-15 {
+    width:1300px;
+    height:100%;
+    
+}
 * {
     box-sizing: border-box;
 }
@@ -203,7 +239,14 @@ h1.menu-head {
     display: flex;
     flex-wrap: wrap;
     align-items: center; 
+    
 }
+.image {
+    background-image:url("menus.jpg");
+ background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+
 
 div.vvImg img {
     display: block;
@@ -234,11 +277,13 @@ button.buttons {
 }
 
 h1.section2Header {
+    font-family: 'Patrick Hand', cursive;
     font-size: 55px;
     text-align: center;
 }
 
 form h2 {
+    font-family: 'Patrick Hand', cursive;
     color: black;
 }
 
@@ -302,6 +347,12 @@ input[type="submit"] {
 
 /* Modal Content/Box */
 .modal-content {
+.images {
+    background-image:url("hiii.jpg");
+ background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
@@ -326,6 +377,7 @@ input[type="submit"] {
 
 /* Modal Header */
 .modal-header {
+    font-family: 'Patrick Hand', cursive;
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
@@ -361,6 +413,7 @@ footer.footsy {
 }
 
 footer.footsy h1 {
+    font-family: 'Patrick Hand', cursive;
     color: white;
     font-size: 35px;
 }
@@ -411,6 +464,7 @@ footer.footsy ul li {
     }
     
     h1.section2Header {
+        font-family: 'Patrick Hand', cursive;
         font-size: 40px;
         text-align: center;
     }
